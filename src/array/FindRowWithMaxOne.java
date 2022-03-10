@@ -16,7 +16,7 @@ Output: 2
 
         int[][] matrix = {{0, 1, 1, 1}, {0, 0, 1, 1}, {1, 1, 1, 1}, {0, 0, 0, 0}};
 
-        int currentMax = 0, max = 0;
+        int currentMax, max = 0;
         int maxIndex = -1;
 
         for (int i = 0; i < matrix.length; i++) {
