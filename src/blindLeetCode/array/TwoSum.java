@@ -18,15 +18,12 @@ public class TwoSum {
 
         for (int j = 0; j < nums.length; j++) {
 
-
             if (map.containsKey(target - nums[j])) {
                 result[0] = j;
                 result[1] = map.get(target - nums[j]);
                 return result;
             }
             map.put(nums[j], 0);
-
-
         }
 
         System.out.println(Arrays.toString(result));
