@@ -15,9 +15,7 @@ public class ArrayRotation {
         int rotationSize = 2;
         int[] temp = new int[rotationSize];
 
-        for (int i = 0; i < rotationSize; i++) {
-            temp[i] = numbers[i];
-        }
+        System.arraycopy(numbers, 0, temp, 0, rotationSize);
 
         //3,4,5,4,5
         int iterator = 0;
@@ -28,9 +26,9 @@ public class ArrayRotation {
         }
 
         System.out.println(iterator);
-        System.out.println(numbers);
-        for (int k = 0; k < temp.length; k++) {
-            numbers[iterator] = temp[k];
+        System.out.println(Arrays.toString(numbers));
+        for (int i : temp) {
+            numbers[iterator] = i;
             iterator++;
         }
 
