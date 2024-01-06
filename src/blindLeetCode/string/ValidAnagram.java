@@ -5,7 +5,7 @@ import java.util.*;
 public class ValidAnagram {
 
     public static void main(String[] args) {
-        System.out.println(isAnagram("rat", "car"));
+        System.out.println(isAnagram("rac", "car"));
     }
 
     public static boolean isAnagram(String s, String t) {
@@ -19,6 +19,8 @@ public class ValidAnagram {
         for (char c : s.toCharArray()) {
             list.add((int) c);
         }
+
+        System.out.println(list);
 
         for (char b : t.toCharArray()) {
             int data = list.lastIndexOf((int) b);
